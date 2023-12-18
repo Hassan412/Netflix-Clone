@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black h-full overflow-x-hidden;
+}
+
+html {
+  @apply h-full
+}
+
+.swiper{
+  overflow: visible !important;
+}
+
+.swiper-slide{
+  transition: 0.3s !important;
+  transition-delay: 300ms !important;
+}
+
+.movies-swiper{
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.movies-swiper h2{
+  margin-top: 3rem;
+}
+.swiper-pagination{
+  bottom:  -50px !important;
+}
+
+.swiper-pagination-bullet{
+  background-color: white !important;
+  opacity: 1 !important;
+  scale: 1.2;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #E50914 !important;
+}
+
+.hide-long-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E50914; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e50914b2; 
+}
+
